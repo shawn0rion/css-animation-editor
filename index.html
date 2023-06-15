@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Custom animations</title>
+</head>
+<body>
+    <div id="menus">
+        <div class="keyframe-menu-container">
+            <form class="keyframe-menu menu">
+                <header>
+                    <h2 class="form-title">Form <span class="form-count">1</span></h2>
+                    <div class="buttons">
+                        <button class="prev">prev</button>
+                        <button class="next">next</button>
+                    </div>
+                </header>
+                <div class="setting">
+                    <label for="">color</label>
+                    <input type="text" name="" id="color">
+                </div>
+                <div class="setting">
+                    <label for="">border-radius:</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="setting">
+                    <label for="">px from bottom: </label>
+                    <input type="text" name="" id="bottom">
+                </div>
+                <div class="setting">
+                    <label for="">px from left: </label>
+                    <input type="text" name="" id="left">
+                </div>
+            </form>
+        </div>
+        <form id="box-menu" class="menu">
+            <h2>box menu</h2>
+            <div class="setting">
+                <label for="">Num states: </label>
+                <input type="text" name="" id="num-states">
+            </div>
+            <div class="setting">
+                <label for="duration">Duration: </label>
+                <input type="text" name="" id="duration" placeholder="1s">
+            </div>
+            <div class="setting">
+                <label for="timing">Timing: </label>
+                <select id="timing">
+                    <option value="linear">linear</option>
+                    <option value="ease">ease</option>
+                    <option value="ease-in">ease-in</option>
+                    <option value="ease-in-out">ease-in-out</option>
+                </select>
+            </div>
+            <div class="setting">
+                <label for="iterationCount">Iteration Count: </label>
+                <select id="iterationCount">
+                    <option value="1">1</option>
+                    <option value="infinite" selected>infinite</option>
+                </select>
+            </div>
+            <div class="setting">
+                <label for="direction">Direction: </label>
+                <select id="direction">
+                    <option value="normal">normal</option>
+                    <option value="reverse">reverse</option>
+                    <option value="alternate">alternate</option>
+                    <option value="alternate-reverse">alternate-reverse</option>
+                </select>
+            </div>
+            <div class="buttons">
+                <button type="reset">clear</button>
+                <button type="submit">ok</button>
+            </div>
+        </form>
+
+
+        </div>
+    </div>
+    <div id="display-container">
+        <div class="box"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
